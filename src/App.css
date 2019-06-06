@@ -1,33 +1,52 @@
+
 .App {
-  text-align: center;
+  background-color: #222f3e;
+  color: #222f3e;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  /* User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50vw;
+  border-radius: 1vw;
+  background-color: #c8d6e5;
 }
 
-.App-link {
-  color: #61dafb;
+.quote-container {
+  display: inline-block;
+  margin: auto;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#text {
+  font-size: 3em;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+#author {
+  text-align: right;
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.App > #quote-box > .buttons-container > .quote-color {
+  padding: 1em;
+  background-color: #222f3e;
+  border: none;
+  color: #c8d6e5;
 }
