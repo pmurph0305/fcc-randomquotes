@@ -8,4 +8,4 @@ Created using React, and create-react-app, deployed with gh-pages.
 
 You can run it locally with `npm start`
 
-Or you can visit the website linked above to view the gh-pages version.
+Or you can visit the website in the description above to view the gh-pages version.
